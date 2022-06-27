@@ -1,4 +1,4 @@
-  AFRAME.registerComponent('sintetizador', {
+  AFRAME.registerComponent('synth', {
     schema: {
       note: {
         type: 'string',
