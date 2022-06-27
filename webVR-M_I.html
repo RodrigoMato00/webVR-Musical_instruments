@@ -17,7 +17,21 @@
 
         <a-entity environment="preset: forest; groundColor: #f0f0f0; groundTexture: none; horizonColor: silver; skyColor: skyblue; dressingColor: #fcfcfc; shadow: true"></a-entity>
 
-
+        <a-entity id="interface" rotation="-45 0 0">
+            <a-ring
+                synth="note: A4"
+                radius-inner="0.2"
+                radius-outer="0.6"
+                color="#212121"
+                segments-theta="64">
+            <a-animation
+                begin="fusing"
+                attribute="opacity"
+                dur="500"
+                from="0.5"
+                to="1"></a-animation></a-ring>
+                <a-entity></a-entity>
+        </a-entity>
 
         <a-camera position="0 0 4" user-height="0" wasd-controls="enabled: false">
             <a-cursor fuse="true"></a-cursor>
